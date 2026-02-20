@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 80" width="400" height="80">
+  <defs>
+    <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="50%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#a855f7"/>
+    </linearGradient>
+    <linearGradient id="v2Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+    <filter id="textGlow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="subtleGlow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  
+  <!-- K2 mark -->
+  <g filter="url(#textGlow)">
+    <!-- Geometric K -->
+    <path d="M15 18 L15 62 M15 40 L40 18 M25 34 L45 62" stroke="url(#logoGrad)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <!-- 2 with circuit aesthetic -->
+    <path d="M55 24 Q55 18 65 18 L78 18 Q88 18 88 28 Q88 38 70 48 L55 62 L90 62" stroke="url(#logoGrad)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+  
+  <!-- Think text -->
+  <text x="105" y="55" font-family="'Inter','SF Pro Display','Segoe UI',system-ui,sans-serif" font-size="38" font-weight="200" letter-spacing="8" fill="url(#logoGrad)" filter="url(#subtleGlow)">THINK</text>
+  
+  <!-- v2 badge -->
+  <rect x="310" y="20" width="55" height="28" rx="6" fill="none" stroke="url(#v2Grad)" stroke-width="1.5" opacity="0.8"/>
+  <text x="337" y="41" font-family="'Inter','SF Pro Display','Segoe UI',system-ui,sans-serif" font-size="16" font-weight="600" fill="url(#v2Grad)" text-anchor="middle" letter-spacing="2">v2</text>
+  
+  <!-- Accent line under K2 -->
+  <line x1="15" y1="68" x2="90" y2="68" stroke="#a855f7" stroke-width="1" opacity="0.4"/>
+</svg>

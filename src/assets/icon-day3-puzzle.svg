@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+  <defs><linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#6366f1"/><stop offset="100%" stop-color="#3b82f6"/></linearGradient></defs>
+  <!-- Day 3: Puzzle / Architecture -->
+  <path d="M12 20 L12 12 L22 12 L22 14 Q24 12 26 14 L26 12 L36 12 L36 22 L34 22 Q36 24 34 26 L36 26 L36 36 L26 36 L26 34 Q24 36 22 34 L22 36 L12 36 L12 26 L14 26 Q12 24 14 22 L12 22 Z" fill="none" stroke="url(#g)" stroke-width="1.5" stroke-linejoin="round"/>
+  <line x1="22" y1="12" x2="22" y2="36" stroke="url(#g)" stroke-width="0.5" opacity="0.3"/>
+  <line x1="12" y1="22" x2="36" y2="22" stroke="url(#g)" stroke-width="0.5" opacity="0.3"/>
+  <text x="24" y="46" font-family="system-ui,sans-serif" font-size="7" fill="#6366f1" text-anchor="middle" opacity="0.6">DAY 3</text>
+</svg>

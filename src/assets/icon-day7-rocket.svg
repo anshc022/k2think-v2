@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+  <defs><linearGradient id="g" x1="0%" y1="100%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a855f7"/><stop offset="50%" stop-color="#6366f1"/><stop offset="100%" stop-color="#3b82f6"/></linearGradient>
+  <filter id="rg"><feGaussianBlur stdDeviation="2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+  <!-- Day 7: Rocket / Launch -->
+  <g filter="url(#rg)">
+    <path d="M24 6 C24 6 18 16 18 28 L14 32 L14 36 L20 33 L20 36 Q22 40 24 42 Q26 40 28 36 L28 33 L34 36 L34 32 L30 28 C30 16 24 6 24 6 Z" fill="none" stroke="url(#g)" stroke-width="1.5" stroke-linejoin="round"/>
+    <circle cx="24" cy="20" r="3" fill="none" stroke="url(#g)" stroke-width="1.2"/>
+    <path d="M24 6 C24 6 20 14 19 24 L29 24 C28 14 24 6 24 6 Z" fill="url(#g)" opacity="0.1"/>
+  </g>
+  <!-- Exhaust -->
+  <path d="M22 38 Q24 44 26 38" stroke="#a855f7" stroke-width="1" fill="none" opacity="0.5"/>
+  <text x="24" y="46" font-family="system-ui,sans-serif" font-size="7" fill="#a855f7" text-anchor="middle" opacity="0.6">DAY 7</text>
+</svg>

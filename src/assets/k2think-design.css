@@ -1,0 +1,88 @@
+/* K2Think v2 — Design System */
+
+:root {
+  --k2-dark: #0a0a0f;
+  --k2-indigo: #6366f1;
+  --k2-blue: #3b82f6;
+  --k2-purple: #a855f7;
+  --k2-glass-bg: rgba(99, 102, 241, 0.06);
+  --k2-glass-border: rgba(99, 102, 241, 0.15);
+  --k2-glass-blur: 20px;
+}
+
+/* Glassmorphism card */
+.k2-glass {
+  background: var(--k2-glass-bg);
+  backdrop-filter: blur(var(--k2-glass-blur));
+  -webkit-backdrop-filter: blur(var(--k2-glass-blur));
+  border: 1px solid var(--k2-glass-border);
+  border-radius: 16px;
+}
+
+.k2-glass:hover {
+  border-color: rgba(168, 85, 247, 0.3);
+  box-shadow: 0 0 30px rgba(99, 102, 241, 0.1);
+}
+
+/* Glow text */
+.k2-glow-text {
+  background: linear-gradient(135deg, var(--k2-indigo), var(--k2-blue), var(--k2-purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Pulse animation for divider */
+@keyframes k2-pulse {
+  0%, 100% { opacity: 0; transform: translateX(-100%); }
+  50% { opacity: 1; }
+  100% { transform: translateX(100%); }
+}
+
+.k2-divider-pulse {
+  animation: k2-pulse 3s ease-in-out infinite;
+}
+
+/* Floating animation for nodes */
+@keyframes k2-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+.k2-float { animation: k2-float 4s ease-in-out infinite; }
+
+/* Icon hover glow */
+.k2-icon {
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.k2-icon:hover {
+  filter: drop-shadow(0 0 12px var(--k2-indigo));
+  transform: scale(1.1);
+}
+
+/* Hero overlay gradient */
+.k2-hero-overlay {
+  background: linear-gradient(180deg,
+    rgba(10, 10, 15, 0) 0%,
+    rgba(10, 10, 15, 0.6) 70%,
+    rgba(10, 10, 15, 1) 100%
+  );
+}
+
+/* Timeline connector */
+.k2-timeline-line {
+  background: linear-gradient(180deg, var(--k2-indigo), var(--k2-purple));
+  width: 2px;
+  opacity: 0.3;
+}
+
+/* Subtle border glow */
+@keyframes k2-border-glow {
+  0%, 100% { border-color: rgba(99, 102, 241, 0.15); }
+  50% { border-color: rgba(168, 85, 247, 0.35); }
+}
+
+.k2-glass-animated {
+  animation: k2-border-glow 4s ease-in-out infinite;
+}

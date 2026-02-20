@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+  <defs><linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#6366f1"/><stop offset="100%" stop-color="#a855f7"/></linearGradient></defs>
+  <!-- Day 6: Shield / Testing -->
+  <path d="M24 8 L36 14 L36 24 C36 32 30 38 24 40 C18 38 12 32 12 24 L12 14 Z" fill="none" stroke="url(#g)" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M24 12 L32 16 L32 24 C32 30 28 34 24 36 C20 34 16 30 16 24 L16 16 Z" fill="url(#g)" opacity="0.1"/>
+  <polyline points="18,24 22,28 30,18" fill="none" stroke="url(#g)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="24" y="46" font-family="system-ui,sans-serif" font-size="7" fill="#6366f1" text-anchor="middle" opacity="0.6">DAY 6</text>
+</svg>
